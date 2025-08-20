@@ -1,0 +1,12 @@
+[book]
+authors = ["shoaibubaid"]
+language = "en"
+src = "src"
+title = "Making Sense with Shoaib"
+
+[output.html.fold]
+enable = true   # turn on folding in the sidebar
+level  = 0      # 0 = all closed; 1 = top level open; 2 = two levels open, etc.
+
+[output.html]
+no-section-label = true
