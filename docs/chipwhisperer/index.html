@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction2 - Making Sense with Shoaib</title>
+        <title>ChipWhisperer - Making Sense with Shoaib</title>
 
 
         <!-- Custom HTML head -->
@@ -175,18 +175,145 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
-<p>This is the first chapter of this test md_book.</p>
+                        <h1 id="chipwhisperer-overview"><a class="header" href="#chipwhisperer-overview">ChipWhisperer Overview</a></h1>
+<p>ChipWhisperer is an open source tool chain that makes it easy to perform and analyse hardware attacks like side channel analysis and fault injection attacks.</p>
+<p>The tool chain is basically of 4 components.</p>
+<ul>
+<li>
+<h3 id="hardware"><a class="header" href="#hardware">Hardware</a></h3>
+<p>This includes the devices that we have from ChipWhisperer, that is,</p>
+<ol>
+<li>The scope (Lite board, Husky, pro, chipshouter) which captures the power or injects faults and,</li>
+<li>The Device under Test, i.e. the board where we are capturing the power from. These boards can be of STM32, XMEGA, esp32 etc.</li>
+</ol>
+<p>Usually, we already have these devices and their default state is enough for us. So we dont modify them much.</p>
+</li>
+<li>
+<h3 id="firmware"><a class="header" href="#firmware">Firmware</a></h3>
+<p>This comprises of the firmware that we run on the hardware. This has the firmware for both the scope and DuT. But we mostly care about the firmware of DuT, i.e. the Micro controller we are interested in. So, this is an important part to understand because here is what we mainly modify the code.</p>
+</li>
+<li>
+<h3 id="software"><a class="header" href="#software">Software</a></h3>
+<p>ChipWhisperer has its own python library to control the scope and communicate with the device under test. Even though we are not going to modify this code, we need to understand this properly to be able to use the APIs. There are 4 types of APIs by the way.</p>
+<ol>
+<li>scope API</li>
+<li>target API</li>
+<li>capture API</li>
+<li>analyzer API</li>
+</ol>
+</li>
+<li>
+<h3 id="tutorials"><a class="header" href="#tutorials">Tutorials</a></h3>
+<p>Tutorials can be found in the jupyter section and do them as homework problems to understand APIs properly.</p>
+<hr />
+</li>
+</ul>
+<h1 id="jupyter-tutorials"><a class="header" href="#jupyter-tutorials">Jupyter Tutorials</a></h1>
+<p>The sequence in which the tutorials should be followed is in this following way.</p>
+<h3 id="setting-up-the-system"><a class="header" href="#setting-up-the-system">Setting Up the System</a></h3>
+<!-- * **[lab 1](#lab-1)**: Connecting to Hardware -->
+<ul>
+<li><strong><a href="lab1/lab1.html">Lab 1</a></strong>: Connecting to Hardware</li>
+</ul>
+<h3 id="sca101-introduction-to-power-analysis-attacks"><a class="header" href="#sca101-introduction-to-power-analysis-attacks">SCA101: Introduction to Power Analysis Attacks</a></h3>
+<!-- * **[Lab 2-1A](#lab-2-1a)**: Instruction Power Differences
+* **[Lab 2-1B](#lab-2-1B)**: Power Analysis for Password Bypass -->
+<ul>
+<li><strong>Lab 2-1A</strong>: Instruction Power Differences</li>
+<li><strong>Lab 2-1B</strong>: Power Analysis for Password Bypass</li>
+<li><strong>Lab 3-1</strong>: Large hamming Weight Swings</li>
+<li><strong>Lab 3-2</strong>: Recovering an AES Key from a Single Bit</li>
+<li><strong>Lab 3-3</strong>: Recovery an AES key from a Power measurement (DPA)</li>
+<li><strong>Lab 4-1</strong>: Showing the Hamming Weight relationship of data &amp; power.</li>
+<li><strong>Lab 4-2</strong>: Correlation Power Analysis</li>
+<li><strong>Lab 4-3</strong>: Using ChipWhisperer for CPA Attacks</li>
+<li><strong>Lab 5-1</strong>: ChipWhisperer CPA Attacks in Practice</li>
+<li><strong>Lab 6-4</strong>: Triggering on UART</li>
+</ul>
+<h3 id="sca201-power-analysis-attacks-on-aes-implementations"><a class="header" href="#sca201-power-analysis-attacks-on-aes-implementations">SCA201: Power Analysis Attacks on AES Implementations</a></h3>
+<ul>
+<li><strong>Lab 1-1A</strong>: Resynchornizing Traces with Sum of Absolute Differences</li>
+<li><strong>Lab 1-1B</strong>: Resynchornizing Traces with Dynamtic Time Warp</li>
+<li><strong>Lab 2-1</strong>: CPA on a 32-bit AES Implementation</li>
+<li><strong>Lab 2-2</strong>: CPA on a Hardware AES Implementation: Last-Round State</li>
+<li><strong>Lab 2-3</strong>: CPA on a Hardware AES Implementation: Mix-Columns</li>
+<li><strong>Lab 3-1A</strong>: AES-256 Bootloader Attack</li>
+<li><strong>Lab 3-B</strong>: AES-256 Bootloader with Reverse Engineering using Power Analysis</li>
+</ul>
+<h3 id="sca202-power-analysis-on-asymmetric-implementations"><a class="header" href="#sca202-power-analysis-on-asymmetric-implementations">SCA202: Power Analysis on Asymmetric Implementations</a></h3>
+<ul>
+<li>Power Analysis on 8-bit RSA Implementation (OLD VERSION IN REPO NOW)</li>
+<li>Power Analysis on MBED-TLS RSA Implementation (NOT IN REPO YET)</li>
+<li>Power Analysis on software ECC Implementation (NOT IN REPO YET)</li>
+</ul>
+<h3 id="sca203-leakage-assesement"><a class="header" href="#sca203-leakage-assesement">SCA203: Leakage Assesement</a></h3>
+<p><strong>NOTE: These labs are not here yet - but material is in the repo for some of this in sca203 folder</strong></p>
+<ul>
+<li>Introduction to Leakage Assessment</li>
+<li>Non-Specific TVLA on AES</li>
+<li>Specific TVLA on AES</li>
+<li>TVLA for Reverse Engineering</li>
+<li>TVLA on ECC</li>
+</ul>
+<h3 id="sca204-power-analysis-on-hardware-ecc"><a class="header" href="#sca204-power-analysis-on-hardware-ecc">SCA204: Power Analysis on Hardware ECC</a></h3>
+<ul>
+<li><strong>Part 1</strong>: Introduction to Hardware ECC Attacks</li>
+<li><strong>Part 2</strong>: Improving the Attack</li>
+<li><strong>Part 3</strong>: Countermeasures</li>
+<li><strong>Part 4</strong>: More Countermeasures and Unintended Consequences</li>
+<li><strong>Part 5</strong>: TVLA</li>
+</ul>
+<h3 id="sca205-power-analysis-on-software-ecc"><a class="header" href="#sca205-power-analysis-on-software-ecc">SCA205: Power Analysis on Software ECC</a></h3>
+<ul>
+<li><strong>Part 1</strong>: Breaking software ECC with TraceWhisperer</li>
+<li><strong>Part 2</strong>: Breaking software ECC without TraceWhisperer</li>
+<li><strong>Part 3</strong>: Breaking software ECC with TraceWhisperer <em>and</em> SAD</li>
+</ul>
+<h3 id="fault101"><a class="header" href="#fault101">FAULT101</a></h3>
+<ul>
+<li><strong>Lab 1-1</strong>: Introduction to Clock Glitching</li>
+<li><strong>Lab 1-2</strong>: Clock Glitching to Bypass Password</li>
+<li><strong>Lab 1-3</strong>: Clock Glitching to Dump Memory</li>
+<li><strong>Lab 1-4</strong>: Authentication Bypass on AES Bootloader</li>
+<li><strong>Lab 2-1</strong>: Introduction to Voltage Glitching</li>
+<li><strong>Lab 2-2</strong>: Voltage Glitching to Bypass Password</li>
+<li><strong>Lab 2-3</strong>: Voltage Glitching to Dump Memory</li>
+</ul>
+<h3 id="fault201"><a class="header" href="#fault201">FAULT201</a></h3>
+<ul>
+<li><strong>Lab 1-1A</strong>: Introduction to AES Fault Attacks</li>
+<li><strong>Lab 1-1B</strong>: AES Loop Skip Fault Attack</li>
+<li><strong>Lab 1-2</strong>: 1.5 Round AES Fault Attack</li>
+<li><strong>Lab 1-3A</strong>: DFA Attack Against Final MixColumns</li>
+<li><strong>Lab 1-3B</strong>: DFA Attack on AES</li>
+<li><strong>Lab 2-1</strong>: Fault Attack on RSA</li>
+</ul>
+<h2 id="naming-notes"><a class="header" href="#naming-notes">Naming Notes</a></h2>
+<h3 id="prefix"><a class="header" href="#prefix">Prefix</a></h3>
+<p>sca: Side Channel (Power) Analysis courses
+fault: Fault Injection (Glitching) courses</p>
+<h3 id="numbering"><a class="header" href="#numbering">Numbering</a></h3>
+<ul>
+<li>1xx: Fundamentals. A 101 course is a prerequisite for all higher course.</li>
+<li>2xx: Advanced topics. Dependencies noted in the labs/courses themselves.</li>
+<li>appx: Applications. Dependencies noted in the labs/courses themselves.</li>
+</ul>
+<h3 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h3>
+<p>We recommend going through sca101 before fault101, at least Lab 1_X and Lab 2_X. This will introduce you to the required ChipWhisperer software.</p>
+<!-- 
+## My Section
+
+This is the content of the section.
+
+- [Go to My Section](#my-section)
+- [Go to My Jupyter Tutorials](#jupyter-tutorials) -->
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../introduction/intro3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
 
-                            <a rel="next prefetch" href="../2/intro1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../chipwhisperer/lab1/lab1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -196,11 +323,8 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../introduction/intro3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
 
-                    <a rel="next prefetch" href="../2/intro1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../chipwhisperer/lab1/lab1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
