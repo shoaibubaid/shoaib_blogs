@@ -1,0 +1,39 @@
+name: Build and Deploy mdBook
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Install Rust (needed for mdBook)
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      # 3. Install mdBook
+      - name: Install mdBook
+        run: cargo install mdbook
+
+      # 4. Build the book into docs/
+      - name: Build mdBook
+        run: mdbook build -d docs
+
+      # 5. Commit & push changes to docs/ (optional if docs/ is in same branch)
+      - name: Commit and Push
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Rebuild mdBook"
+          git push || echo "No changes to commit"
