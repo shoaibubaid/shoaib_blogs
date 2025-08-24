@@ -1,0 +1,4 @@
+mdbook build -d docs
+git add docs
+git commit -m "commit message"
+git push
