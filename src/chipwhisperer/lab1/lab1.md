@@ -30,15 +30,15 @@ scope has these parameters by the way.
 
 cwlite Device|
 sn         = 50203220594a48303330303238303031 
-| fw_version | gain              | adc                                  | clock                     | trigger          | io              | glitch            |
-|:-----------|:------------------|:-------------------------------------|:--------------------------|:-----------------|:----------------|:------------------|
-| major=0    | mode=low          | state=False                          | adc_src=clkgen_x1         | triggers=tio4    | tio1=serial_tx  | clk_src=target    |
+| fw_version | gain              | adc                                  | clock                     | trigger          | io                                                  | glitch            |
+|:-----------|:------------------|:-------------------------------------|:--------------------------|:-----------------|:----------------                                    |:------------------|
+| major=0    | mode=low          | state=False                          | adc_src=clkgen_x1         | triggers=tio4    | tio1=serial_tx                                      | clk_src=target    |
 | minor=65   | gain=0            | basic_mode=low                       | adc_phase=0               | module=basic     | tio2=serial_rx  | mmcm_locked=False |
 | debug=0    | db=5.5            | timeout=2                            | adc_freq=96000000         |                  | tio3=high_z     | width=10.15625    |
 |            |                   | offset=0                             | adc_rate=96000000.0       |                  | tio4=high_z     | width_fine=0      |
 |            |                   | presamples=0                         | adc_locked=True           |                  | pdid=high_z     | offset=10.15625   |
 |            |                   | samples=24400                        | freq_ctr=0                |                  | pdic=high_z     | offset_fine=0     |
-|            |                   | decimate=1                           | freq_ctr_src=extclk       |                  | nrst=high_z     | trigger_src=manual|
+|            |                   | decimate=1                           | freq_ctr_src=extclk       |                  | [nrst](../lab2_1a/lab2_1a.md#scopeionrst)=high_z     | trigger_src=manual|
 |            |                   | trig_count=1137825499                | clkgen_src=system         |                  | glitch_hp=False | arm_timing=after_scope |
 |            |                   | fifo_fill_mode=normal                | extclk_freq=10000000      |                  | glitch_lp=False | ext_offset=0      |
 |            |                   |                                     | clkgen_mul=2              |                  | extclk_src=hs1  | repeat=1          |
