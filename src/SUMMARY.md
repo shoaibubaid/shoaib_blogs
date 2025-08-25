@@ -13,3 +13,4 @@
 
 - [ChipWhisperer](chipwhisperer/Readme.md)
     - [Lab 1: Connecting to Hardware](chipwhisperer/lab1/lab1.md)
+    - [Lab 2: Instruction Power Differences](chipwhisperer/lab2_1a/lab2_1a.md)
