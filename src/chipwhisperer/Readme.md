@@ -25,3 +25,4 @@ The tool chain is basically of 4 components.
     Tutorials can be found in the jupyter section and do them as homework problems to understand APIs properly.
 
 Start from the [Jupyter tutorials](jupyter/Readme.md) and hopefully with each lab, we can learn new things incrementally.
+**[Lab 2-1A](jupyter/Readme.md)**
