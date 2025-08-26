@@ -15,3 +15,5 @@
     - [Jupyter Tutorials](chipwhisperer/jupyter/readme.md)
         - [Lab 1: Connecting to Hardware](chipwhisperer/jupyter/lab1/lab1.md)
         - [Lab 2: Instruction Power Differences](chipwhisperer/jupyter/lab2_1a/lab2_1a.md)
+    - [Firmware](firmware/readme.md)
+        - [Simple Serial Information](firmware/simpleserial/simpleserial.md)
