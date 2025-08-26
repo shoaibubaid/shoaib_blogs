@@ -1,4 +1,4 @@
-# Jupyter Tutorials 
+# Jupyter labs 
 
 The sequence in which the tutorials should be followed is in this following way.
 

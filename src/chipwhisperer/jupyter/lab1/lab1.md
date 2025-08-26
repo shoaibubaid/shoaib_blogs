@@ -61,8 +61,8 @@ target = cw.target(scope, cw.targets.SimpleSerial)
 
 The target object provides the interface for configuring the target device under test (DUT). There are currently two UART communication classes:
 
-1. Simple Serial target
-2. Simple Serial V2 target
+1. [Simple Serial target](../../firmware/simpleserial/simpleserial.md#simple-serial-target)
+2. [Simple Serial V2 target](../../firmware/simpleserial/simpleserial.md#simple-serial-v2-target)
 
 and by the way there are two FPGA based targets also:
 
