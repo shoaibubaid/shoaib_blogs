@@ -35,7 +35,7 @@ The sequence in which the tutorials should be followed is in this following way.
 ### Setting Up the System
 
 <!-- * **[lab 1](#lab-1)**: Connecting to Hardware -->
-* **[Lab 1](lab1/lab1.md)**: Connecting to Hardware
+* **[Lab 1](lab1/lab1.md)**: Connecting to Hardware.
 
 ### SCA101: Introduction to Power Analysis Attacks
 
