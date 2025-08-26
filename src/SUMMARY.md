@@ -12,6 +12,6 @@
     - [Intro 3](2/intro3.md) -->
 
 - [ChipWhisperer](chipwhisperer/Readme.md)
-    - [Jupyter Tutorials](chipwhisperer/jupyter/Readme.md)
-        - [Lab 1: Connecting to Hardware](chipwhisperer/lab1/lab1.md)
-        - [Lab 2: Instruction Power Differences](chipwhisperer/lab2_1a/lab2_1a.md)
+    - [Jupyter Tutorials](chipwhisperer/jupyter/readme.md)
+        - [Lab 1: Connecting to Hardware](chipwhisperer/jupyter/lab1/lab1.md)
+        - [Lab 2: Instruction Power Differences](chipwhisperer/jupyter/lab2_1a/lab2_1a.md)
