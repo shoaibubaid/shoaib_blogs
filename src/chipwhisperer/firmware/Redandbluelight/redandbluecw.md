@@ -1,4 +1,4 @@
-# Red and Blue light
+# Red and Blue light Problem!!!
 
 While doing something, if you unexpectedly see this blue and red light being on the board, Do not panic, it is just there is no firmware in the scope and it is ready to be flashed with new firmware.
 

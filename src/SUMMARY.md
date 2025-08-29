@@ -16,4 +16,5 @@
         - [Lab 1: Connecting to Hardware](chipwhisperer/jupyter/lab1/lab1.md)
         - [Lab 2: Instruction Power Differences](chipwhisperer/jupyter/lab2_1a/lab2_1a.md)
     - [Firmware](chipwhisperer/firmware/Readme.md)
+        - [Red and Blue light Problem](chipwhisperer/firmware/Redandbluelight/redandbluecw.md)
         - [Simple Serial Information](chipwhisperer/firmware/simpleserial/simpleserial.md)
