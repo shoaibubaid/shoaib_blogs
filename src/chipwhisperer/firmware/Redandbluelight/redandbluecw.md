@@ -1,6 +1,6 @@
 # Red and Blue light Problem!!!
 
-While doing something, if you unexpectedly see this blue and red light being on the board, Do not panic, everyone has to go through this error, it is just there is no firmware in the scope and it is ready to be flashed with new firmware.
+While doing something, if you unexpectedly see this blue and red light being on the board, Do not panic, everyone has to go through this error, it is just that,there is no firmware in the scope and it is ready to be flashed with new firmware.
 
 In that case, just do this 
 
