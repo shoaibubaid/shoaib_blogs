@@ -12,7 +12,7 @@ The sequence in which the tutorials should be followed is in this following way.
 <!-- * **[Lab 2-1A](#lab-2-1a)**: Instruction Power Differences
 * **[Lab 2-1B](#lab-2-1B)**: Power Analysis for Password Bypass -->
 * **[Lab 2-1A](lab2_1a/lab2_1a.md)**: Instruction Power Differences
-* **Lab 2-1B**: Power Analysis for Password Bypass
+* **[Lab 2-1B](lab2_1b/lab2_1b.md)**: Power Analysis for Password Bypass
 * **Lab 3-1**: Large hamming Weight Swings
 * **Lab 3-2**: Recovering an AES Key from a Single Bit
 * **Lab 3-3**: Recovery an AES key from a Power measurement (DPA)
