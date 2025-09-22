@@ -112,6 +112,7 @@ cw.plot(plot)
 ```
 
 ![fig: distinct spike in the beginning](lab3_1.png "fig: distinct spike in the beginning")
+
 You should see a very distinct trace near the beginning of the plot, meaning that the data being manipulated in the target device is visible in its power trace! Again, there's a lot of room to explore here:
 
 - Try setting multiple bytes to 0x00 and 0xFF.
