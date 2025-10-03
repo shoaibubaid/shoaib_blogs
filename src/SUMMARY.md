@@ -14,7 +14,11 @@
 
 - [Introduction to Cryptography](cryptography/cryptography.md)
     - [A. APPENDICES](cryptography/appendix/appendix.md)
+        - [Mathematical Background](cryptography/appendix/mathematical_background/mathematical_background.md)
+        - [Basic Algorithmic Number Theory](cryptography/appendix/basic_algorithm/basic_algorithm.md)
     - [I. Introduction and Classical Cryptography](cryptography/introduction/introduction.md)
+        - [1. Introduction](cryptography/introduction/introduction/intro.md)
+        - [2. Perfectly Secret Encryption](cryptography/introduction/pse/pse.md)
     - [II. Private key (Symmetric) Cryptography](cryptography/privatekeycrypto/skc.md)
     - [III. Public key (Asymmetric) Cryptography](cryptography/publickeycrypto/pkc.md)
 
