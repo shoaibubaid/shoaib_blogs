@@ -10,12 +10,12 @@
         - [Red and Blue light Problem](chipwhisperer/firmware/Redandbluelight/redandbluecw.md)
         - [Simple Serial Information](chipwhisperer/firmware/simpleserial/simpleserial.md)
 
-- [Computer Organization and Architecture]()
+- [Computer Organization and Architecture](coa/coa.md)
 
-- [Introduction to Cryptography]()
+- [Introduction to Cryptography](cryptography/cryptography.md)
     - [A. APPENDICES](cryptography/appendix/appendix.md)
     - [I. Introduction and Classical Cryptography](cryptography/introduction/introduction.md)
     - [II. Private key (Symmetric) Cryptography](cryptography/privatekeycrypto/skc.md)
     - [III. Public key (Asymmetric) Cryptography](cryptography/publickeycrypto/pkc.md)
 
-- [Hardware Security]()
+- [Hardware Security](hardware_security/hardware_security.md)
