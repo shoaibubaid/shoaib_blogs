@@ -11,6 +11,7 @@
         - [Simple Serial Information](chipwhisperer/firmware/simpleserial/simpleserial.md)
 
 - [Computer Organization and Architecture](coa/coa.md)
+    - [4. The Processor](coa/processor/processor.md)
 
 - [Introduction to Cryptography](cryptography/cryptography.md)
     - [A. APPENDICES](cryptography/appendix/appendix.md)
